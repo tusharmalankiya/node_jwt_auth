@@ -81,6 +81,6 @@ module.exports.logout_get = (req, res) =>{
 module.exports.delete_all = (req, res) => {
   User.deleteMany({}).then((result) => {
     console.log(result);
-    return res.json({ msg: "deleted many" });
+    return res.json({ msg: "deleted all users" });
   });
 };
